@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>Catalog</title>
+    <meta name="description" content="Каталог магазина">
+    <meta name="keywords" content="HTML CSS JS GULP SVG animation grid flexbox">
+
+    <script>
+      var docElement = document.documentElement;
+      docElement.className = docElement.className.replace(/\bno-js\b/, '') + ' js';
+    </script>
+
+    
+
+    <link rel="stylesheet" href="css/style.min.css?v=1680438276504">
+  </head>
+<body>
+  <header class="header container">
+  <a href="/" class="header__link">
+    <picture>
+      <source srcset="./img/icon/logo375.svg" media="(max-width: 768px)">
+      <source srcset="./img/icon/logo768.svg" media="(max-width: 1399px)">
+      <img src="./img/icon/logo.svg" alt="logo" class="header__logo">
+    </picture>
+  </a>
+  <nav class="header__nav">
+      <ul class="header__list undotted">
+          <li class="header__item">
+              <a href="catalog.html" class="header-item__link">Catalog</a>
+          </li>
+          <li class="header__item">
+              <a href="#" class="header-item__link">About Us</a>
+          </li>
+          <li class="header__item">
+            <a href="blog.html" class="header-item__link">Blog</a>
+          </li>
+          <li class="header__item">
+              <a href="animation.html" class="header-item__link">Animation</a>
+          </li>
+          <li class="header__item">
+              <a href="svg.html" class="header-item__link">SVG</a>
+          </li>
+          <li class="header__item">
+              <a href="grid.html" class="header-item__link">Grid</a>
+          </li>
+          <li class="header__item header__item--menu">
+            <button class="header-item__link header__link--menu">Menu</button>
+          </li>
+          <li class="header__item--close">
+            <button class="header__link--close header__swap"></button>
+          </li>
+      </ul>
+  </nav>
+  <ul class="header__list undotted">
+      <li class="header__item header__item--loupe">
+          <a href="#" class="header-item__link header-item__icon"></a>
+      </li>
+      <li class="header__item">
+          <a href="contact.html" class="header-item__link header-item__link--fatty">Contact  Us</a>
+      </li>
+  </ul>
+  <ul class="burger undotted">
+    <li class="burger__item">
+      <a class="burger__link" href="catalog.html">Catalog</a>
+    </li>
+    <li class="burger__item">
+      <a class="burger__link" href="#">About us</a>
+    </li>
+    <li class="burger__item">
+      <a class="burger__link" href="blog.html">Blog</a>
+    </li>
+    <li class="burger__item">
+      <a class="burger__link" href="animation.html">Animation</a>
+    </li>
+    <li class="burger__item">
+      <a class="burger__link" href="svg.html">SVG</a>
+    </li>
+    <li class="burger__item">
+      <a class="burger__link" href="grid.html">Grid</a>
+    </li>
+    <li class="burger__item burger__item--fatty">
+      <a class="burger__link" href="contact.html">Contact Us</a>
+    </li>
+  </ul>
+</header>
+
+    <main>
+        <section class="catalog container container__mobile">
+            <h1 class="catalog__title">catalog Products</h1>
+            <div class="path">
+  <p class="path__subtitle path__subtitle--arrow">Home</p>
+  <p class="path__subtitle path__subtitle--opacity">Catalog</p>
+</div>
+
+            <ul class="catalog__list undotted">
+              <li class="catalog__item category__item--green @@margin">
+  <a href="#" class="catalog-item__link">
+      <p class="catalog-item__text catalog__text--apparel">APPAREL KIDS</p>
+      <picture>
+        <source srcset="./img/apparel_kids375.png" media="(max-width: 768px)">
+        <source srcset="./img/apparel_kids768(2).png" media="(max-width: 1399px)">
+        <img src="./img/apparel_kids.png" alt="apparel kids" class="catalog-item__img">
+      </picture>
+  </a>
+</li>
+
+              <li class="catalog__item category__item--brown @@margin">
+  <a href="#" class="catalog-item__link">
+      <p class="catalog-item__text catalog__text--holiday">HOLIDAY SHOP</p>
+      <picture>
+        <source srcset="./img/holiday_shop375.png" media="(max-width: 768px)">
+        <source srcset="./img/holiday_shop768(2).png" media="(max-width: 1399px)">
+        <img src="./img/holiday_shop.png" alt="holiday_shop" class="catalog-item__img">
+      </picture>
+  </a>
+</li>
+
+              <li class="catalog__item category__item--beige @@margin">
+  <a href="toys.html" class="catalog-item__link">
+      <p class="catalog-item__text catalog__text--toys">TOYS</p>
+      <picture>
+        <source srcset="./img/toys375.png" media="(max-width: 768px)">
+        <source srcset="./img/toys768.png" media="(max-width: 1399px)">
+        <img src="./img/toys.png" alt="toys" class="catalog-item__img">
+      </picture>
+  </a>
+</li>
+
+              <li class="catalog__item category__item--blue catalog__item--margin">
+  <a href="#" class="catalog-item__link">
+      <p class="catalog-item__text catalog__text--accessories">ACCESSORIES</p>
+      <picture>
+        <source srcset="./img/accessories375.png" media="(max-width: 768px)">
+        <source srcset="./img/accessories768.png" media="(max-width: 1399px)">
+        <img src="./img/accessories.png" alt="accessories" class="catalog-item__img">
+      </picture>
+  </a>
+</li>
+
+              <li class="catalog__item category__item--beige @@margin">
+  <a href="#" class="catalog-item__link">
+      <p class="catalog-item__text catalog__text--sale">SALE</p>
+      <picture>
+        <source srcset="./img/sale375.jpg" media="(max-width: 768px)">
+        <source srcset="./img/sale768.jpg" media="(max-width: 1399px)">
+        <img src="./img/sale.png" alt="sale" class="catalog-item__img">
+      </picture>
+  </a>
+</li>
+
+              <li class="catalog__item category__item--beige @@margin">
+  <a href="#" class="catalog-item__link">
+      <p class="catalog-item__text catalog__text--adults">APPAREL ADULTS</p>
+      <picture>
+        <source srcset="./img/adults375.jpg" media="(max-width: 768px)">
+        <source srcset="./img/adults768.jpg" media="(max-width: 1399px)">
+        <img src="/img/apparel_adults.png" alt="adults" class="catalog-item__img">
+      </picture>
+  </a>
+</li>
+
+            </ul>
+        </section>
+        <section class="description container container__mobile">
+            <h1 class="description__title">Product Description</h1>
+            <p class="description__subtitle">Interactive doll Zapf Creation Baby Born Sister can drink from a bottle and almost really cry. You can even bathe her, just like a little sister.</p>
+            <p class="description__subtitle">A toy with a height of 43 cm bends its knees, the head rotates, it can stand upright. Such a doll will be an excellent choice for a gift for a girl from 4 years old.</p>
+            <p class="description__subtitle">The set includes a miniature set of fashionable clothes, a hairbrush, a bottle for water, a pair of hairpins and elastic bands for hair, as well as two bracelets: one for the doll, the other for her young mistress.</p>
+        </section>
+    </main>
+    <footer class="footer">
+  <div class="footer__wrapper container container__mobile">
+      <div class="footer__navigation">
+          <p class="footer__title footer__title--border">Navigation</p>
+          <nav class="footer__nav">
+              <ul class="footer__list footer__list--grid undotted">
+                  <li class="footer__item">
+                      <a href="#" class="footer-item__link">About Us</a>
+                  </li>
+                  <li class="footer__item">
+                      <a href="blog.html" class="footer-item__link">Blog</a>
+                  </li>
+                  <li class="footer__item">
+                      <a href="#" class="footer-item__link">Design Services</a>
+                  </li>
+                  <li class="footer__item">
+                      <a href="#" class="footer-item__link">Featured On</a>
+                  </li>
+                  <li class="footer__item">
+                      <a href="#" class="footer-item__link">2018 Holiday Catalog</a>
+                  </li>
+                  <li class="footer__item">
+                      <a href="#" class="footer-item__link">Shop By Designer</a>
+                  </li>
+              </ul>
+          </nav>
+      </div>
+      <div class="footer__information">
+          <p class="footer__title footer__title--border">Customer Information</p>
+          <nav class="footer__nav">
+              <ul class="footer__list footer__list--grid footer__list--margin undotted">
+                  <li class="footer__item">
+                      <a href="contact.html" class="footer-item__link">Contact Us</a>
+                  </li>
+                  <li class="footer__item">
+                      <a href="#" class="footer-item__link">Sale Exclusions</a>
+                  </li>
+                  <li class="footer__item">
+                      <a href="#" class="footer-item__link">Shipping & Returns</a>
+                  </li>
+                  <li class="footer__item">
+                      <a href="#" class="footer-item__link">Terms & Conditions</a>
+                  </li>
+                  <li class="footer__item">
+                      <a href="#" class="footer-item__link">Privacy Policy</a>
+                  </li>
+                  <li class="footer__item">
+                      <a href="#" class="footer-item__link">Search</a>
+                  </li>
+              </ul>
+          </nav>
+      </div>
+      <div class="footer__connect">
+          <p class="footer__title footer__title--border">Connect</p>
+          <div class="footer__email">
+              <input type="text" name="text" placeholder="Email" class="footer__input">
+              <button class="button" type="button">Join</button>
+
+          </div>
+          <ul class="footer__list footer__list--flex footer__list--margin undotted">
+              <li class="footer__item footer__item--circle">
+                  <a href="#" class="footer__link">
+                      <img src="./img/icon/facebook.svg" alt="facebook" class="footer__img">
+                  </a>
+              </li>
+              <li class="footer__item footer__item--circle">
+                  <a href="#" class="footer__link">
+                      <img src="./img/icon/twitter.svg" alt="twitter" class="footer__img">
+                  </a>
+              </li>
+              <li class="footer__item footer__item--circle">
+                  <a href="#" class="footer__link">
+                      <img src="./img/icon/pinterest.svg" alt="pinterest" class="footer__img">
+                  </a>
+              </li>
+              <li class="footer__item footer__item--circle">
+                  <a href="#" class="footer__link">
+                      <img src="./img/icon/instagram.svg" alt="instagram" class="footer__img">
+                  </a>
+              </li>
+          </ul>
+      </div>
+  </div>
+  <div class="footer__bottom container container__mobile">
+      <ul class="footer__list footer__list--flex undotted">
+          <li class="footer__item footer__item--margin">
+              <fieldset class="footer__rating">
+                  Company Rating
+                  <div class="footer__rating-area">
+                      <input type="radio" id="star-5" name="rating" value="5">
+                      <label for="star-5" title="grade «5»"></label>
+                      <input type="radio" id="star-4" name="rating" value="4">
+                      <label for="star-4" title="grade «4»"></label>
+                      <input type="radio" id="star-3" name="rating" value="3">
+                      <label for="star-3" title="grade «3»"></label>
+                      <input type="radio" id="star-2" name="rating" value="2">
+                      <label for="star-2" title="grade «2»"></label>
+                      <input type="radio" id="star-1" name="rating" value="1">
+                      <label for="star-1" title="grade «1»"></label>
+                  </div>
+              </fieldset>
+          </li>
+          <li class="footer__item footer__item--margin">Copyright © 2018 Dlk • Design Life Kids</li>
+          <li class="footer__item footer__item--transparent">Web Design — Direct Line Development</li>
+      </ul>
+  </div>
+</footer>
+
+    <script src="js/burger.js"></script>
+</body>
+</html>

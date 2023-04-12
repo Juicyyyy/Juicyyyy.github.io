@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>DLK</title>
+    <meta name="description" content="Учебный проект, созданный по макетам из figma">
+    <meta name="keywords" content="HTML CSS JS GULP SVG animation grid flexbox">
+
+    <script>
+      var docElement = document.documentElement;
+      docElement.className = docElement.className.replace(/\bno-js\b/, '') + ' js';
+    </script>
+
+    
+
+    <link rel="stylesheet" href="css/style.min.css?v=1680438276504">
+  </head>
+  <body>
+    <header class="header container">
+  <a href="/" class="header__link">
+    <picture>
+      <source srcset="./img/icon/logo375.svg" media="(max-width: 768px)">
+      <source srcset="./img/icon/logo768.svg" media="(max-width: 1399px)">
+      <img src="./img/icon/logo.svg" alt="logo" class="header__logo">
+    </picture>
+  </a>
+  <nav class="header__nav">
+      <ul class="header__list undotted">
+          <li class="header__item">
+              <a href="catalog.html" class="header-item__link">Catalog</a>
+          </li>
+          <li class="header__item">
+              <a href="#" class="header-item__link">About Us</a>
+          </li>
+          <li class="header__item">
+            <a href="blog.html" class="header-item__link">Blog</a>
+          </li>
+          <li class="header__item">
+              <a href="animation.html" class="header-item__link">Animation</a>
+          </li>
+          <li class="header__item">
+              <a href="svg.html" class="header-item__link">SVG</a>
+          </li>
+          <li class="header__item">
+              <a href="grid.html" class="header-item__link">Grid</a>
+          </li>
+          <li class="header__item header__item--menu">
+            <button class="header-item__link header__link--menu">Menu</button>
+          </li>
+          <li class="header__item--close">
+            <button class="header__link--close header__swap"></button>
+          </li>
+      </ul>
+  </nav>
+  <ul class="header__list undotted">
+      <li class="header__item header__item--loupe">
+          <a href="#" class="header-item__link header-item__icon"></a>
+      </li>
+      <li class="header__item">
+          <a href="contact.html" class="header-item__link header-item__link--fatty">Contact  Us</a>
+      </li>
+  </ul>
+  <ul class="burger undotted">
+    <li class="burger__item">
+      <a class="burger__link" href="catalog.html">Catalog</a>
+    </li>
+    <li class="burger__item">
+      <a class="burger__link" href="#">About us</a>
+    </li>
+    <li class="burger__item">
+      <a class="burger__link" href="blog.html">Blog</a>
+    </li>
+    <li class="burger__item">
+      <a class="burger__link" href="animation.html">Animation</a>
+    </li>
+    <li class="burger__item">
+      <a class="burger__link" href="svg.html">SVG</a>
+    </li>
+    <li class="burger__item">
+      <a class="burger__link" href="grid.html">Grid</a>
+    </li>
+    <li class="burger__item burger__item--fatty">
+      <a class="burger__link" href="contact.html">Contact Us</a>
+    </li>
+  </ul>
+</header>
+
+    <main class="main">
+        <section class="collection container">
+            <div class="collection__wrapper container__mobile">
+                <div class="collection__switch">
+                    <span class="collection__num">01</span>
+                    <ul class="collection__list undotted">
+                        <li class="collection__item">
+                            <button class="collection-item__button"></button>
+                        </li>
+                        <li class="collection__item">
+                            <button class="collection-item__button"></button>
+                        </li>
+                        <li class="collection__item">
+                            <button class="collection-item__button"></button>
+                        </li>
+                        <li class="collection__item">
+                            <button class="collection-item__button"></button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="collection__text">
+                    <h1 class="collection__title">THE OOH NOO COLLECTION</h1>
+                    <p class="collection__subtitle">Designed in Slovenia</p>
+                    <button class="button" type="button">EXPLORE NOW</button>
+
+                </div>
+            </div>
+            <div class="collection__basement">
+                <p class="collection__sub-subtitle">Free (continental) USA shipping on all orders of $100 USD or more!</p>
+            </div>
+            <picture>
+              <source srcset="./img/monster375.png, ./img/monster375-2x.png 2x" media="(max-width: 767px)">
+              <source srcset="./img/monster768.png, ./img/monster768-2x.png 2x" media="(max-width: 1399px)">
+              <img src="/img/monster.png" alt="monster" class="collection__img">
+            </picture>
+            <audio autoplay controls loop class="audio">
+              <source src="../img/audio/Birdsong.mp3" type="audio/mpeg">
+              Аудио не поддерживается вашим браузером
+            </audio>
+        </section>
+        <section class="category container">
+            <div class="category__products container__mobile">
+                <h2 class="category__title">Category Products</h2>
+                <ul class="category__list undotted">
+                  <li class="category__item category__item--green @@margin">
+  <a href="#" class="category-item__link">
+      <p class="category-item__text category-item__text--apparel">APPAREL KIDS</p>
+      <picture>
+        <source srcset="./img/apparel_kids375.png" media="(max-width: 768px)">
+        <source srcset="./img/apparel_kids768.png" media="(max-width: 1399px)">
+        <img src="./img/apparel_kids.png" alt="apparel kids" class="category-item__img">
+      </picture>
+  </a>
+</li>
+
+                  <li class="category__item category__item--brown @@margin">
+  <a href="#" class="category-item__link">
+      <p class="category-item__text category-item__text--holiday">HOLIDAY SHOP</p>
+      <picture>
+        <source srcset="./img/holiday_shop768.png" media="(max-width: 768px)">
+        <source srcset="./img/holiday_shop768.png" media="(max-width: 1399px)">
+        <img src="./img/holiday_shop.png" alt="holiday_shop" class="category-item__img">
+      </picture>
+  </a>
+</li>
+
+                  <li class="category__item category__item--beige @@margin">
+  <a href="toys.html" class="category-item__link">
+      <p class="category-item__text category-item__text--toys">TOYS</p>
+      <picture>
+        <source srcset="./img/toys768.png" media="(max-width: 768px)">
+        <source srcset="./img/toys768.png" media="(max-width: 1399px)">
+        <img src="./img/toys.png" alt="toys" class="category-item__img">
+      </picture>
+  </a>
+</li>
+
+                  <li class="category__item category__item--blue @@margin">
+  <a href="#" class="category-item__link">
+      <p class="category-item__text category-item__text--accessories">ACCESSORIES</p>
+      <picture>
+        <source srcset="./img/accessories.png" media="(max-width: 768px)">
+        <source srcset="./img/accessories.png" media="(max-width: 1399px)">
+        <img src="./img/accessories.png" alt="accessories" class="category-item__img">
+      </picture>
+  </a>
+</li>
+
+                </ul>
+            </div>
+            <div class="category__switch container__mobile">
+                <button class="category__button category__button--left"></button>
+                <button class="category__button category__button--right"></button>
+                <p class="category__description">Modern finds for the modern home. Curated goods by unique designers around the world from fashion to furniture for kids and adults.</p>
+            </div>
+        </section>
+        <section class="delivery container">
+          <picture class="container__mobile">
+            <source srcset="./img/dress375.jpg, ./img/dress375-2x.jpg 2x" media="(max-width: 768px)">
+            <source srcset="./img/dress768.jpg, ./img/dress768-2x.jpg 2x" media="(max-width: 1399px)">
+            <img class="delivery__img" src="./img/dress.jpg" alt="dress">
+          </picture>
+            <div class="delivery__text container__mobile">
+                <h2 class="delivery__title">Delivery</h2>
+                <p class="delivery__subtitle delivery__subtitle--weight">Delivery</p>
+                <p class="delivery__subtitle">Guarantee</p>
+                <p class="delivery__subtitle delivery__subtitle--margin">Credit</p>
+                <p class="delivery__description">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
+                <p class="delivery__description delivery__description--margin">What started as an outlet to deal with the traumatic loss of my husband, dlk has now become a truly happy place for me and i have you and all of the beautiful designers that we work with to thank!</p>
+                <a href="#" class="link">LEARN MORE</a>
+
+            </div>
+        </section>
+        <section class="awards container">
+            <h2 class="awards__title">Awards</h2>
+            <ul class="awards__list undotted container__mobile">
+                <li class="awards__item">
+                  <picture>
+                    <source srcset="./img/mail768.png, ./img/mail768-2x.png 2x" media="(max-width: 1399px)">
+                    <img src="./img/mail.png" alt="mail" width="193" height="60" class="awards__img">
+                  </picture>
+                </li>
+                <li class="awards__item">
+                  <picture>
+                    <source srcset="./img/apple768.png, ./img/apple768-2x.png 2x" media="(max-width: 1399px)">
+                    <img src="./img/apple.png" alt="apple" width="179" height="61" class="awards__img">
+                  </picture>
+                </li>
+                <li class="awards__item">
+                  <picture>
+                    <source srcset="./img/eltex768.png, ./img/eltex768-2x.png 2x" media="(max-width: 1399px)">
+                    <img src="./img/eltex.png" alt="eltex" width="216" height="46" class="awards__img">
+                  </picture>
+                </li>
+                <li class="awards__item">
+                  <picture>
+                    <source srcset="./img/owox768.png, ./img/owox768-2x.png 2x" media="(max-width: 1399px)">
+                    <img src="./img/owox.png" alt="owox" width="211" height="40" class="awards__img">
+                  </picture>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <div class="wrapper container">
+        <section class="design">
+            <div class="design__wrapper container__mobile">
+                <h2 class="design__title">Design Life Kids</h2>
+                <p class="design__subtitle">About Us</p>
+                <p class="design__description">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
+                <a href="#" class="link">buy now</a>
+
+            </div>
+        </section>
+        <article class="contacts">
+            <div class="contacts__wrapper container__mobile">
+                <h2 class="contacts__title">Contacts</h2>
+                <p class="contacts__subtitle">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
+                <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A1259a66d7771d8e7e4f4030e51fb4409cc32097deeceb38e4397f08d0f096a35&amp;source=constructor" width="483" height="196" frameborder="0"></iframe>
+            </div>
+        </article>
+    </div>
+    <footer class="footer">
+  <div class="footer__wrapper container container__mobile">
+      <div class="footer__navigation">
+          <p class="footer__title footer__title--border">Navigation</p>
+          <nav class="footer__nav">
+              <ul class="footer__list footer__list--grid undotted">
+                  <li class="footer__item">
+                      <a href="#" class="footer-item__link">About Us</a>
+                  </li>
+                  <li class="footer__item">
+                      <a href="blog.html" class="footer-item__link">Blog</a>
+                  </li>
+                  <li class="footer__item">
+                      <a href="#" class="footer-item__link">Design Services</a>
+                  </li>
+                  <li class="footer__item">
+                      <a href="#" class="footer-item__link">Featured On</a>
+                  </li>
+                  <li class="footer__item">
+                      <a href="#" class="footer-item__link">2018 Holiday Catalog</a>
+                  </li>
+                  <li class="footer__item">
+                      <a href="#" class="footer-item__link">Shop By Designer</a>
+                  </li>
+              </ul>
+          </nav>
+      </div>
+      <div class="footer__information">
+          <p class="footer__title footer__title--border">Customer Information</p>
+          <nav class="footer__nav">
+              <ul class="footer__list footer__list--grid footer__list--margin undotted">
+                  <li class="footer__item">
+                      <a href="contact.html" class="footer-item__link">Contact Us</a>
+                  </li>
+                  <li class="footer__item">
+                      <a href="#" class="footer-item__link">Sale Exclusions</a>
+                  </li>
+                  <li class="footer__item">
+                      <a href="#" class="footer-item__link">Shipping & Returns</a>
+                  </li>
+                  <li class="footer__item">
+                      <a href="#" class="footer-item__link">Terms & Conditions</a>
+                  </li>
+                  <li class="footer__item">
+                      <a href="#" class="footer-item__link">Privacy Policy</a>
+                  </li>
+                  <li class="footer__item">
+                      <a href="#" class="footer-item__link">Search</a>
+                  </li>
+              </ul>
+          </nav>
+      </div>
+      <div class="footer__connect">
+          <p class="footer__title footer__title--border">Connect</p>
+          <div class="footer__email">
+              <input type="text" name="text" placeholder="Email" class="footer__input">
+              <button class="button" type="button">Join</button>
+
+          </div>
+          <ul class="footer__list footer__list--flex footer__list--margin undotted">
+              <li class="footer__item footer__item--circle">
+                  <a href="#" class="footer__link">
+                      <img src="./img/icon/facebook.svg" alt="facebook" class="footer__img">
+                  </a>
+              </li>
+              <li class="footer__item footer__item--circle">
+                  <a href="#" class="footer__link">
+                      <img src="./img/icon/twitter.svg" alt="twitter" class="footer__img">
+                  </a>
+              </li>
+              <li class="footer__item footer__item--circle">
+                  <a href="#" class="footer__link">
+                      <img src="./img/icon/pinterest.svg" alt="pinterest" class="footer__img">
+                  </a>
+              </li>
+              <li class="footer__item footer__item--circle">
+                  <a href="#" class="footer__link">
+                      <img src="./img/icon/instagram.svg" alt="instagram" class="footer__img">
+                  </a>
+              </li>
+          </ul>
+      </div>
+  </div>
+  <div class="footer__bottom container container__mobile">
+      <ul class="footer__list footer__list--flex undotted">
+          <li class="footer__item footer__item--margin">
+              <fieldset class="footer__rating">
+                  Company Rating
+                  <div class="footer__rating-area">
+                      <input type="radio" id="star-5" name="rating" value="5">
+                      <label for="star-5" title="grade «5»"></label>
+                      <input type="radio" id="star-4" name="rating" value="4">
+                      <label for="star-4" title="grade «4»"></label>
+                      <input type="radio" id="star-3" name="rating" value="3">
+                      <label for="star-3" title="grade «3»"></label>
+                      <input type="radio" id="star-2" name="rating" value="2">
+                      <label for="star-2" title="grade «2»"></label>
+                      <input type="radio" id="star-1" name="rating" value="1">
+                      <label for="star-1" title="grade «1»"></label>
+                  </div>
+              </fieldset>
+          </li>
+          <li class="footer__item footer__item--margin">Copyright © 2018 Dlk • Design Life Kids</li>
+          <li class="footer__item footer__item--transparent">Web Design — Direct Line Development</li>
+      </ul>
+  </div>
+</footer>
+
+    <div class="modal">
+        <div class="modal__overlay"></div>
+        <div class="contact__wrapper">
+      <form method="post" action="#" class="contact__form">
+          <div class="contact__one-input">
+              <label for="name" class="contact__label contact__label--name">Name</label>
+              <input type="text" id="name" placeholder="Ivan Ivanov" class="contact__input">
+          </div>
+          <div class="contact__two-input">
+              <div class="contact__input-wrapper">
+                  <label for="phone" class="contact__label">Phone</label>
+                  <input type="tel" id="phone" class="contact__input">
+              </div>
+              <div class="contact__input-wrapper">
+                  <label for="email" class="contact__label">Email</label>
+                  <input type="email" id="email" class="contact__input">
+              </div>
+          </div>
+          <div class="contact__message">
+              <p class="contact__label">Message</p>
+              <textarea name="message" cols="80" rows="10" class="contact__textarea"></textarea>
+          </div>
+          <div class="contact__personal">
+              <input id="personal" type="checkbox" class="contact__checkbox" checked="checked">
+              <label for="personal" class="contact__label">By clicking on the button, you consent to the processing of your personal data</label>
+          </div>
+          <button class="button" type="button">Submit</button>
+
+      </form>
+</div>
+
+        <a href="#" class="modal__close"></a>
+    </div>
+    <script src="js/app.js" defer="defer"></script>
+    <script src="js/script.js"></script>
+    <script src="js/burger.js"></script>
+  </body>
+</html>
