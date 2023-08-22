@@ -6,333 +6,511 @@
     <meta name="google" content="notranslate">
     <meta name="format-detection" content="telephone=no">
 
-    <title>Portfolio</title>
+    <title>Товары и точка</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
     <script>
       var docElement = document.documentElement;
       docElement.className = docElement.className.replace(/\bno-js\b/, '') + ' js';
     </script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
-    
 
-    <link rel="stylesheet" href="css/style.min.css?v=1684851464120">
-
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
     <header class="header container">
-  <a href="index.html" class="header__btn--fatty">Home</a>
-  <nav class="header__nav">
-    <ul class="header__list undotted">
-      <li class="header__item">
-        <a href="blog.html" class="header__btn">My blog</a>
-      </li>
-      <li class="header__item login-button">
-        <button class="header__btn header__signIn" data-modal="signIn">Sign in</button>
-      </li>
-      <li class="header__item register-button">
-        <button class="header__btn header__register" data-modal="register">Register</button>
-      </li>
-      <li class="header__item to-profile hidden">
-        <a class="header__btn header__profile" href="profile.html" data-modal="profile">My profile</a>
-      </li>
-    </ul>
-  </nav>
-</header>
-
+      <div class="header__wrapper">
+        <div class="header__nav">
+          <button class="header__button" type="button">
+            <span class="header__line"></span>
+          </button>
+          <a class="header__logo" href="/">Товары и точка</a>
+        </div>
+        <div class="header__search">
+          <input class="header__input" type="search" placeholder="Я ищу...">
+          <button class="header__searchButton"></button>
+        </div>
+        <div class="header__iconBlock">
+          <div class="header__icon">
+            <a class="header__link" href="/">
+              <span class="header__link-profile"></span>
+              Профиль
+            </a>
+          </div>
+          <div class="header__icon">
+            <a class="header__link" href="/">
+              <span class="header__link-basket"></span>
+              Корзина
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
     <main class="main">
-      <section class="developer container">
-        <h1 class="developer__title">Yulia Rafailevna</h1>
-        <p class="developer__subtitle">Future front-end developer 24 years old, Tolyatti</p>
-        <button class="burger__btn burger-js"></button>
-<div class="burger">
-  <div class="burger__wrapper">
-    <button class="burger__btn--close"></button>
-    <ul class="burger__list undotted">
-      <li class="burger__item">
-        <a href="index.html" class="burger__link burger__item--active">Home</a>
-      </li>
-      <li class="burger__item">
-        <a href="blog.html" class="burger__link">My blog</a>
-      </li>
-      <li class="burger__item">
-        <button class="burger__item--btn" data-modal="signIn">Sign in</button>
-      </li>
-      <li class="burger__item">
-        <button class="burger__item--btn" data-modal="register">Register</button>
-      </li>
-    </ul>
+      <div class="main__display container">
+        <div class="main__wrapper">
+          <div class="basket">
+            <div class="basket__product">
+              <h1 class="basket__title">Корзина</h1>
+              <div class="basket__wrapper">
+                <div class="basket__wrapperButton borderCheckbox">
+                  <div class="basket__wrapperCheckbox">
+                    <input class="basket__input" id="Choose-all" type="checkbox" name="Choose-all" checked="checked">
+                    <label class="basket__label" for="Choose-all">Выбрать все</label>
+                  </div>
+                  <div class="basket__summaryText">
+                    <p class="basket__text"><span class="basket__quantity">3 товара</span> · <span class="basket__summary"></span></p>
+                  </div>
+                  <button class="buttonHide hideBasket"></button>
+                </div>
+                <div class="basket__wrapperList">
+                  <div class="basket__list">
+  <div class="basket__wrapperCheckbox marginCheckbox mobileCheckbox">
+    <input class="basket__input input-js" id="t-shirt" type="checkbox" checked="checked">
+    <label class="basket__label" for="t-shirt"></label>
+  </div>
+  <div class="basket__list-item">
+    <div class="basket__list-info">
+      <picture>
+        <source srcset="./img/t-shirt_320.jpg" media="(max-width: 1023px)" width="80" height="106">
+        <img class="basket__list-img" src="./img/t-shirt.jpg" alt="t-shirt" width="72" height="96">
+      </picture>
+      <div class="basket__list-text">
+        <p class="basket__list-name">Футболка UZcotton мужская</p>
+        <p class="basket__list-characteristic">Цвет: белый&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Размер: 56</p>
+        <p class="basket__list-stock">Коледино WB</p>
+        <p class="basket__list-provider">OOO Вайлдберриз <span class="providerWB"></span></p>
+      </div>
+      <div class="basket__list-count">
+        <div class="count" data-price="522" data-sale="1051">
+          <button class="count__btnMinus count__btn btnDisabled" data-direction="minus" disabled="disabled" type="button"></button>
+          <input class="count__number" type="text" maxlength="2" value="1">
+          <button class="count__btnPlus count__btn" data-direction="plus" type="button"></button>
+        </div>
+        <p class="quantity">Осталось 2 шт.</p>
+        <div class="icon">
+          <button class="icon__like"></button>
+          <button class="icon__delete"></button>
+        </div>
+      </div>
+      <div class="basket__list-price">
+        <p class="basket__list-newPrice 522FontSize">522 <span class="basket__list-unit">сом</span></p>
+        <p class="basket__list-oldPrice">1051 сом</p>
+        <div class="basket__hoverPrice">
+          <div class="basket__hoverPrice-wrapper">
+            <p class="basket__hoverPrice-title">Скидка 55%</p>
+            <p class="basket__hoverPrice-text">−300 сом</p>
+          </div>
+          <div class="basket__hoverPrice-wrapper">
+            <p class="basket__hoverPrice-title">Скидка покупателя 10%</p>
+            <p class="basket__hoverPrice-text">−30 сом</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+                  <div class="basket__list">
+  <div class="basket__wrapperCheckbox marginCheckbox mobileCheckbox">
+    <input class="basket__input input-js" id="case" type="checkbox" checked="checked">
+    <label class="basket__label" for="case"></label>
+  </div>
+  <div class="basket__list-item">
+    <div class="basket__list-info">
+      <picture>
+        <source srcset="./img/case_320.jpg" media="(max-width: 1023px)" width="80" height="106">
+        <img class="basket__list-img" src="./img/case.jpg" alt="t-shirt" width="72" height="96">
+      </picture>
+      <div class="basket__list-text">
+        <p class="basket__list-name">Силиконовый чехол картхолдер (отверстия) для карт, прозрачный кейс бампер на Apple iPhone XR, MobiSafe</p>
+        <p class="basket__list-characteristic">Цвет: прозрачный</p>
+        <p class="basket__list-stock">Коледино WB</p>
+        <p class="basket__list-provider">OOO Мегапрофстиль <span class="providerM"></span></p>
+      </div>
+      <div class="basket__list-count">
+        <div class="count" data-price="2100047" data-sale="2300047">
+          <button class="count__btnMinus count__btn btnDisabled" data-direction="minus" disabled="disabled" type="button"></button>
+          <input class="count__number" type="text" maxlength="2" value="1">
+          <button class="count__btnPlus count__btn" data-direction="plus" type="button"></button>
+        </div>
+        <p class="quantity"> </p>
+        <div class="icon">
+          <button class="icon__like"></button>
+          <button class="icon__delete"></button>
+        </div>
+      </div>
+      <div class="basket__list-price">
+        <p class="basket__list-newPrice newPriceFontSize">2100047 <span class="basket__list-unit">сом</span></p>
+        <p class="basket__list-oldPrice">2300047 сом</p>
+        <div class="basket__hoverPrice">
+          <div class="basket__hoverPrice-wrapper">
+            <p class="basket__hoverPrice-title">Скидка 55%</p>
+            <p class="basket__hoverPrice-text">−300 сом</p>
+          </div>
+          <div class="basket__hoverPrice-wrapper">
+            <p class="basket__hoverPrice-title">Скидка покупателя 10%</p>
+            <p class="basket__hoverPrice-text">−30 сом</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+                  <div class="basket__list">
+  <div class="basket__wrapperCheckbox marginCheckbox mobileCheckbox">
+    <input class="basket__input input-js" id="pencils" type="checkbox" checked="checked">
+    <label class="basket__label" for="pencils"></label>
+  </div>
+  <div class="basket__list-item">
+    <div class="basket__list-info">
+      <picture>
+        <source srcset="./img/pencils_320.jpg" media="(max-width: 1023px)" width="80" height="106">
+        <img class="basket__list-img" src="./img/pencils.jpg" alt="t-shirt" width="72" height="96">
+      </picture>
+      <div class="basket__list-text">
+        <p class="basket__list-name">Карандаши цветные Faber-Castell &quot;Замок&quot;, набор 24 цвета, заточенные, шестигранные, Faber-Castell</p>
+        <p class="basket__list-characteristic"> </p>
+        <p class="basket__list-stock">Коледино WB</p>
+        <p class="basket__list-provider">OOO Вайлдберриз <span class="providerWB"></span></p>
+      </div>
+      <div class="basket__list-count">
+        <div class="count" data-price="494" data-sale="950">
+          <button class="count__btnMinus count__btn btnDisabled" data-direction="minus" disabled="disabled" type="button"></button>
+          <input class="count__number" type="text" maxlength="2" value="1">
+          <button class="count__btnPlus count__btn" data-direction="plus" type="button"></button>
+        </div>
+        <p class="quantity">Осталось 2 шт.</p>
+        <div class="icon">
+          <button class="icon__like"></button>
+          <button class="icon__delete"></button>
+        </div>
+      </div>
+      <div class="basket__list-price">
+        <p class="basket__list-newPrice 494FontSize">494 <span class="basket__list-unit">сом</span></p>
+        <p class="basket__list-oldPrice">950 сом</p>
+        <div class="basket__hoverPrice">
+          <div class="basket__hoverPrice-wrapper">
+            <p class="basket__hoverPrice-title">Скидка 55%</p>
+            <p class="basket__hoverPrice-text">−300 сом</p>
+          </div>
+          <div class="basket__hoverPrice-wrapper">
+            <p class="basket__hoverPrice-title">Скидка покупателя 10%</p>
+            <p class="basket__hoverPrice-text">−30 сом</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+                </div>
+              </div>
+            </div>
+            <div class="absent">
+              <div class="absent__wrapper">
+                <p class="absent__title">Отсутствуют · 3 товара</p>
+                <button class="buttonHide hideAbsent"></button>
+              </div>
+              <div class="absent__product">
+                <div class="absent__list">
+  <div class="absent__list-info paddingProduct marginProduct">
+    <div class="absent__list-wrapper">
+      <picture>
+        <source srcset="./img/t-shirt_320.jpg" media="(max-width: 1023px)" width="80" height="106">
+        <img class="absent__list-img colorImg" src="./img/t-shirt.jpg" alt="t-shirt" width="72" height="96">
+      </picture>
+       <div class="absent__list-text">
+         <p class="absent__list-name colorText">Футболка UZcotton мужская</p>
+         <p class="absent__list-characteristic colorText">Цвет: белый&nbsp;&nbsp;&nbsp;&nbsp;Размер: 56</p>
+     </div>
+     </div>
+      <div class="icon marginIcon mobileIcon">
+        <button class="icon__like"></button>
+        <button class="icon__delete"></button>
+      </div>
   </div>
 </div>
 
 
+                <div class="absent__list">
+  <div class="absent__list-info paddingProduct marginProduct">
+    <div class="absent__list-wrapper">
+      <picture>
+        <source srcset="./img/case_320.jpg" media="(max-width: 1023px)" width="80" height="106">
+        <img class="absent__list-img colorImg" src="./img/case.jpg" alt="t-shirt" width="72" height="96">
+      </picture>
+       <div class="absent__list-text">
+         <p class="absent__list-name colorText">Силиконовый чехол картхолдер (отверстия) для карт, прозрачный кейс бампер на Apple iPhone XR, MobiSafe</p>
+         <p class="absent__list-characteristic colorText">Цвет: прозрачный</p>
+     </div>
+     </div>
+      <div class="icon marginIcon mobileIcon">
+        <button class="icon__like"></button>
+        <button class="icon__delete"></button>
+      </div>
+  </div>
+</div>
 
-        <div class="slider">
-          <div class="slider__wrapper">
-            <div class="slider__inner-wrapper">
-              <div class="slider__slide">
-                <picture>
-                  <source srcset="./img/images375.jpg" media="(max-width: 768px)" width="280" height="465">
-                  <source srcset="./img/images768.jpg" media="(max-width: 1399px)" width="648" height="465">
-                  <img class="portfolio__img" src="./img/images.jpg" alt="my foto">
-                </picture>
-              </div>
-              <div class="slider__slide">
-                <picture>
-                  <source srcset="./img/images375.jpg" media="(max-width: 768px)" width="280" height="465">
-                  <source srcset="./img/images768.jpg" media="(max-width: 1399px)" width="648" height="465">
-                  <img class="portfolio__img" src="./img/images.jpg" alt="my foto">
-                </picture>
-              </div>
-              <div class="slider__slide">
-                <picture>
-                  <source srcset="./img/images375.jpg" media="(max-width: 768px)" width="280" height="465">
-                  <source srcset="./img/images768.jpg" media="(max-width: 1399px)" width="648" height="465">
-                  <img class="portfolio__img" src="./img/images.jpg" alt="my foto">
-                </picture>
-              </div>
-              <div class="slider__slide">
-                <picture>
-                  <source srcset="./img/images375.jpg" media="(max-width: 768px)" width="280" height="465">
-                  <source srcset="./img/images768.jpg" media="(max-width: 1399px)" width="648" height="465">
-                  <img class="portfolio__img" src="./img/images.jpg" alt="my foto">
-                </picture>
+
+                <div class="absent__list">
+  <div class="absent__list-info paddingProduct marginProduct">
+    <div class="absent__list-wrapper">
+      <picture>
+        <source srcset="./img/pencils_320.jpg" media="(max-width: 1023px)" width="80" height="106">
+        <img class="absent__list-img colorImg" src="./img/pencils.jpg" alt="t-shirt" width="72" height="96">
+      </picture>
+       <div class="absent__list-text">
+         <p class="absent__list-name colorText">Карандаши цветные Faber-Castell &quot;Замок&quot;, набор 24 цвета, заточенные, шестигранные, Faber-Castell</p>
+         <p class="absent__list-characteristic colorText"> </p>
+     </div>
+     </div>
+      <div class="icon marginIcon mobileIcon">
+        <button class="icon__like"></button>
+        <button class="icon__delete"></button>
+      </div>
+  </div>
+</div>
+
+
               </div>
             </div>
-          </div>
-          <div class="slider__bottom-panel">
-            <button class="slider__btn--left"></button>
-            <div class="slider__pagination"></div>
-            <button class="slider__btn--right"></button>
+            <div class="delivery">
+              <div class="delivery__header">
+                <h2 class="delivery__title">Способ доставки</h2>
+                <button class="buttonChange btnFormDelivery">Изменить</button>
+              </div>
+              <div class="delivery__content">
+                <div class="delivery__address">
+                  <span class="delivery__text">Пункт выдачи</span>
+                  <div class="delivery__address-wrapper">
+                    <span class="delivery__textClient">Бишкек, улица Ахматбека Суюмбаева, 12/1</span>
+                    <span class="delivery__textRating"> 4.99&nbsp;&nbsp;Ежедневно с 10 до 21 </span>
+                  </div>
+                </div>
+                <div class="delivery__price">
+                  <span class="delivery__text">Стоимость доставки</span>
+                  <span class="delivery__textClient"> Бесплатно</span>
+                </div>
+                <div class="delivery__date">
+                  <span class="delivery__text">5—6 февраля</span>
+                  <div class="delivery__img">
+                    <div class="delivery__1img"></div>
+                    <div class="delivery__2img"></div>
+                    <div class="delivery__3img"></div>
+                  </div>
+                </div>
+                <div class="delivery__date">
+                  <span class="delivery__text">7—8 февраля</span>
+                  <div class="delivery__product"></div>
+                </div>
+                <div class="delivery__priceShipping">
+                  <span class="priceShipping-icon sizeIcon"></span>
+                  <span class="delivery__priceShipping-text">Обратная доставка товаров на склад при отказе — <span class="deliveryColorText">бесплатно</span></span>
+                </div>
+              </div>
+            </div>
+            <div class="payment">
+              <div class="payment__header">
+                <h2 class="payment__title">Способ оплаты</h2>
+                <button class="buttonChange marginButtonChange btnFormPayment">Изменить</button>
+              </div>
+              <p class="payment__card">1234 56•• •••• 1234&nbsp;&nbsp;&nbsp;01/30</p>
+              <p class="payment__text">Спишем оплату с карты при получении</p>
+            </div>
+            <div class="recipient">
+              <h2 class="recipient__title">Получатель</h2>
+              <form class="recipient__form">
+                <div class="recipient__wrapper">
+                  <div class="recipient__wrapper-label">
+                    <label class="recipient__label">Имя</label>
+                    <div class="recipient__inputBox">
+                      <input data-type="name" class="recipient__input inputWidth" placeholder="Имя" type="text">
+                    </div>
+                  </div>
+                  <div class="recipient__wrapper-label">
+                    <label class="recipient__label">Фамилия</label>
+                    <div class="recipient__inputBox">
+                      <input data-type="surname" class="recipient__input inputWidth" placeholder="Фамилия" type="text">
+                    </div>
+                  </div>
+                </div>
+                <div class="recipient__wrapper">
+                  <div class="recipient__wrapper-label">
+                    <label class="recipient__label">Электронная почта</label>
+                    <div class="recipient__inputBox">
+                      <input data-type="email" class="recipient__input" placeholder="Почта" type="email">
+                    </div>
+                  </div>
+                  <div class="recipient__wrapper-label">
+                    <label class="recipient__label">Телефон</label>
+                    <div class="recipient__inputBox">
+                      <input data-type="phone" data-format="+* *** *** ** **" class="recipient__input" placeholder="Телефон" id="phone" maxlength="30" type="tel">
+                    </div>
+                  </div>
+                  <div class="recipient__wrapper-custom">
+                    <div class="recipient__wrapper-label">
+                      <label class="recipient__label">ИНН для таможни</label>
+                      <div class="recipient__inputBox">
+                        <input data-type="number" class="recipient__input" placeholder="ИНН" type="number">
+                      </div>
+                      <span class="recipient__span">Для таможенного оформления</span>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
-      </section>
-      <section class="aboutMe">
-        <h1 class="aboutMe__title">About me</h1>
-        <div class="aboutMe__wrapper--one">
-          <p class="aboutMe__text">Aliquam tortor molestie turpis est tristique. Congue diam orci amet quis semper ut. Vitae aenean nibh facilisis urna, ultricies euismod nunc. Commodo fringilla sit hendrerit consequat. Vel ac elit vel sagittis.</p>
-        </div>
-        <div class="aboutMe__wrapper--two">
-          <p class="aboutMe__text">Tincidunt id quis pellentesque rutrum pretium. Egestas aliquam dictum ipsum nisl, sed pulvinar. Commodo elit sed a fermentum non justo. Etiam platea consectetur.</p>
-        </div>
-        <div class="aboutMe__wrapper--three">
-          <p class="aboutMe__text">Quam ipsum odio tellus etiam aliquam dolor ut hendrerit. Felis risus nec vitae nunc ultricies placerat. Nullam nec felis eu id dolor pellentesque tristique.</p>
-        </div>
-      </section>
-      <section class="skills container">
-        <h1 class="skills__title">Skills</h1>
-        <p class="skills__subtitle">I work in such programs as</p>
-        <div class="skills__programs">
-          <div class="skills__program">
-            <img class="skills__img" src="./img/html.png" alt="html" width="79" height="90">
-            <p class="skills__text">HTML 5</p>
-            <div class="skills__wrapper">
-              <label class="skills__label" for="html">90%</label>
-              <progress class="skills__progress" id="html" max="100" value="90"></progress>
+        <div class="summary">
+          <div class="summary__header">
+            <h2 class="summary__title">Итого</h2>
+            <span class="summary__title sum-js"></span>
+          </div>
+          <div class="summary__info">
+            <div class="summary__info-price">
+              <span class="summary__text quantity-js">3 товара</span>
+              <span class="summary__text oldPrice-js"></span>
+            </div>
+            <div class="summary__info-sale">
+              <span class="summary__text">Скидка</span>
+              <span class="summary__text sale-js"></span>
+            </div>
+            <div class="summary__info-delivery">
+              <span class="summary__text">Доставка</span>
+              <span class="summary__text">Бесплатно</span>
             </div>
           </div>
-          <div class="skills__program">
-            <img class="skills__img" src="./img/css.png" alt="css" width="79" height="90">
-            <p class="skills__text">CSS/SCSS</p>
-            <div class="skills__wrapper">
-              <label class="skills__label" for="css">90%</label>
-              <progress class="skills__progress" id="css" max="100" value="90"></progress>
+          <div class="summary__delivery">
+            <div class="summary__wrapper">
+              <span class="summary__subtitle">Доставка в пункт выдачи</span>
+              <button class="summary__btnChange btnFormDelivery"></button>
             </div>
+            <span class="summary__span">Бишкек, улица Ахматбека Суюмбаева, 12/1</span>
+            <span class="summary__span colorTextPink">5-8 фев</span>
           </div>
-          <div class="skills__program">
-            <img class="skills__img" src="./img/js.png" alt="js" width="68" height="90">
-            <p class="skills__text">JavaScript</p>
-            <div class="skills__wrapper">
-              <label class="skills__label" for="js">35%</label>
-              <progress class="skills__progress" id="js" max="100" value="35"></progress>
-            </div>
+          <div class="summary__deliveryFree">
+            <span class="priceShipping-icon"></span>
+            <span class="summary__span">Обратная доставка товаров <span class="transferLine">на склад при отказе — <span class="deliveryColorText">бесплатно</span></span></span>
           </div>
-          <div class="skills__program">
-            <img class="skills__img" src="./img/git.png" alt="git" width="90" height="90">
-            <p class="skills__text">Git/GitHub</p>
-            <div class="skills__wrapper">
-              <label class="skills__label" for="git">80%</label>
-              <progress class="skills__progress" id="git" max="100" value="80"></progress>
+          <div class="summary__payment">
+            <div class="summary__wrapper">
+              <span class="summary__subtitle">Оплата картой</span>
+              <button class="summary__btnChange btnFormPayment"></button>
             </div>
+            <span class="summary__span summary__card">1234 12•• •••• 1234</span>
           </div>
-          <div class="skills__program">
-            <img class="skills__img" src="./img/figma.png" alt="figma" width="60" height="90">
-            <p class="skills__text">Figma</p>
-            <div class="skills__wrapper">
-              <label class="skills__label" for="figma">90%</label>
-              <progress class="skills__progress" id="figma" max="100" value="90"></progress>
+          <div class="summary__checkbox">
+            <div class="summary__checkbox-wrapper">
+              <input class="summary__input" id="payment" type="checkbox">
+              <label class="summary__label" for="payment">Списать оплату сразу</label>
             </div>
+            <span class="summary__span">Спишем оплату с карты при получении</span>
+          </div>
+          <button class="summary__button">Заказать</button>
+          <div class="summary__agreement">
+            <span class="summary__span widthAgreement">Соглашаюсь <span class="borderBottom">с правилами пользования торговой площадкой</span> и <span class="borderBottom">возврата</span></span>
           </div>
         </div>
-      </section>
-      <section class="portfolio">
-        <h1 class="portfolio__title">Portfolio</h1>
-        <div class="portfolio__wrapper container">
-          <div class="swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <picture>
-                  <source srcset="./img/portfolio-375.png" media="(max-width: 768px)">
-                  <source srcset="./img/portfolio-768.png" media="(max-width: 1399px)">
-                  <img class="portfolio__img" src="./img/portfolio.png" alt="portfolio">
-                </picture>
-              </div>
-              <div class="swiper-slide">
-                <picture>
-                  <source srcset="./img/portfolio-375.png" media="(max-width: 768px)">
-                  <source srcset="./img/portfolio-768.png" media="(max-width: 1399px)">
-                  <img class="portfolio__img" src="./img/portfolio.png" alt="portfolio">
-                </picture>
-              </div>
-              <div class="swiper-slide">
-                <picture>
-                  <source srcset="./img/portfolio-375.png" media="(max-width: 768px)">
-                  <source srcset="./img/portfolio-768.png" media="(max-width: 1399px)">
-                  <img class="portfolio__img" src="./img/portfolio.png" alt="portfolio">
-                </picture>
-              </div>
-            </div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-          </div>
-          <div class="portfolio__fon">
-            <p class="portfolio__site">Learning site for DL Academy courses</p>
-            <p class="portfolio__desc">A simple multi-page static site. The design layout was in Figma. HTML and CSS were used. The site is responsive and cross-browser, but without adding interactivity via JavaScript.</p>
-          </div>
-        </div>
-      </section>
+      </div>
     </main>
     <footer class="footer">
-  <h1 class="footer__title">Contacts</h1>
-  <p class="footer__subtitle">Want to know more or just chat? You are welcome!</p>
-  <button class="footer__btn" data-modal="send">Send message</button>
-  <div class="footer__wrapper">
-    <a href="#" class="footer__link">Instagram</a>
-    <a href="#" class="footer__link">Vk</a>
-    <a href="#" class="footer__link">Telegram</a>
-    <a href="#" class="footer__link">Mail</a>
-    <a href="#" class="footer__link">GitHub</a>
-    <a href="#" class="footer__link">Phone</a>
-  </div>
-  <p class="footer__text">Design by <span class="footer__text--dashed">DL Academy</span></p>
-  <p class="footer__text">Program code from Julia</p>
-</footer>
-
-    <div class="answerServer full hidden">
-  <p class="answerServer__text textError"></p>
-  <button class="answerServer__btn" type="button"></button>
-</div>
-
-    <div class="loader_js full loader hidden">
-  <div class="spinner-border" role="status">
-    <span class="sr-only">Loading...</span>
-  </div>
-</div>
-
-    <form name="signIn" id="signIn" class="signIn modal-js" novalidate>
-  <div class="signIn__overlay" data-close="signIn"></div>
-  <div class="signIn__wrapper">
-    <label for="emailSignIn" class="signIn__label">Email<span class="label__star--red"> *</span></label>
-    <input name="email" type="email" id="emailSignIn" class="signIn__input" required>
-    <label for="passwordSignIn" class="signIn__label">Password<span class="label__star--red"> *</span></label>
-    <input name="password" type="password" id="passwordSignIn" class="signIn__input" required>
-    <button type="submit" class="signIn__btn">Log in</button>
-  </div>
-  <div class="signIn__close" data-close="signIn"></div>
-</form>
-
-    <form name="register" id="register" class="register modal-js" novalidate>
-  <div class="register__overlay" data-close="register"></div>
-  <div class="register__wrapper">
-    <label for="email" class="register__label">Email<span class="label__star--red"> *</span></label>
-    <input name="email" type="email" id="email" class="register__input register__input--width" required>
-    <div class="register__wrapper--inputs">
-      <div class="register__wrapper--input">
-        <label for="name" class="register__label">Name<span class="label__star--red"> *</span></label>
-        <input name="name" type="text" id="name" class="register__input" required>
-      </div>
-      <div class="register__wrapper--input">
-        <label for="surname" class="register__label">Surname<span class="label__star--red"> *</span></label>
-        <input name="surname" type="text" id="surname" class="register__input" required>
+      <p class="footer__title">© 2022  OOO «Товары и точка»</p>
+    </footer>
+    <div class="mobileMenu">
+      <a class="mobileMenu__link" href="/">
+        <span class="mobileMenu__link-home"></span>
+      </a>
+      <a class="mobileMenu__link" href="/">
+        <span class="mobileMenu__link-catalog"></span>
+      </a>
+      <a class="mobileMenu__link" href="/">
+        <span class="mobileMenu__link-basket"></span>
+      </a>
+      <a class="mobileMenu__link" href="/">
+        <span class="mobileMenu__link-favorites"></span>
+      </a>
+      <a class="mobileMenu__link" href="/">
+        <span class="mobileMenu__link-profile"></span>
+      </a>
+    </div>
+    <div class="modal formPayment">
+        <div class="formPayment__wrapper">
+          <div class="formPayment__header">
+            <h2 class="formPayment__title">Способ оплаты</h2>
+            <button class="formPayment__btnClose"></button>
+          </div>
+          <div class="formPayment__main">
+            <div class="formPayment__card">
+              <input class="formPayment__input" type="radio" id="mir" name="card" checked="checked">
+              <label class="formPayment__label" for="mir"><span class="formPayment__label-mir"></span>1234 56•• •••• 1234</label>
+            </div>
+            <div class="formPayment__card">
+              <input class="formPayment__input" type="radio" id="visa" name="card">
+              <label class="formPayment__label" for="visa"><span class="formPayment__label-visa"></span>1234 56•• •••• 1234</label>
+            </div>
+            <div class="formPayment__card">
+              <input class="formPayment__input" type="radio" id="master" name="card">
+              <label class="formPayment__label" for="master"><span class="formPayment__label-master"></span>1234 56•• •••• 1234</label>
+            </div>
+            <div class="formPayment__card">
+              <input class="formPayment__input" type="radio" id="maestro" name="card">
+              <label class="formPayment__label" for="maestro"><span class="formPayment__label-maestro"></span>1234 56•• •••• 1234</label>
+            </div>
+          </div>
+          <button class="formPayment__button">Выбрать</button>
+        </div>
+    </div>
+    <div class="modal formDelivery">
+      <div class="formDelivery__wrapper">
+        <div class="formDelivery__header">
+          <h2 class="formDelivery__title">Способ доставки</h2>
+          <button class="formDelivery__btnClose"></button>
+        </div>
+        <div class="formDelivery__method">
+          <label class="formDelivery__method-label" for="place">
+            <input class="formDelivery__method-radio" type="radio" id="place" name="method" checked="checked">
+            <span class="formDelivery__method-text">В пункт выдачи</span>
+          </label>
+          <label class="formDelivery__method-label" for="courier">
+            <input class="formDelivery__method-radio" type="radio" id="courier" name="method">
+            <span class="formDelivery__method-text">Курьером</span>
+          </label>
+        </div>
+        <div class="formDelivery__main">
+          <span class="formDelivery__main-title">Мои адреса</span>
+          <div class="formDelivery__address">
+            <div class="formDelivery__address-wrapper">
+              <input class="formDelivery__input" type="radio" id="address1" name="address" checked="checked">
+              <label class="formDelivery__label" for="address1">Бишкек, улица Табышалиева, 57</label>
+              <span class="formDelivery__spanMobile">Пункт выдачи</span>
+            </div>
+            <button class="formDelivery__btnDelete"></button>
+          </div>
+          <div class="formDelivery__address">
+            <div class="formDelivery__address-wrapper">
+              <input class="formDelivery__input" type="radio" id="address2" name="address">
+              <label class="formDelivery__label" for="address2">Бишкек, улица Жукеева-Пудовкина, 77/1</label>
+              <span class="formDelivery__spanMobile"><span class="formDelivery__spanMobile-number">4.99</span>Пункт выдачи</span>
+            </div>
+            <button class="formDelivery__btnDelete"></button>
+          </div>
+          <div class="formDelivery__address">
+            <div class="formDelivery__address-wrapper">
+              <input class="formDelivery__input" type="radio" id="address3" name="address">
+              <label class="formDelivery__label" for="address3">Бишкек, микрорайон Джал, улица Ахунбаева Исы, 67/1</label>
+              <span class="formDelivery__spanMobile"><span class="formDelivery__spanMobile-number">4.99</span>Пункт выдачи</span>
+            </div>
+            <button class="formDelivery__btnDelete"></button>
+          </div>
+        </div>
+        <button class="formDelivery__button">Выбрать</button>
       </div>
     </div>
-    <div class="register__wrapper--inputs">
-      <div class="register__wrapper--input">
-        <label for="password" class="register__label">Password<span class="label__star--red"> *</span></label>
-        <input name="password" type="password" id="password" class="register__input" required>
-      </div>
-      <div class="register__wrapper--input">
-        <label for="repeatPassword" class="register__label">Repeat password<span class="label__star--red"> *</span></label>
-        <input name="repeatPassword" type="password" id="repeatPassword" class="register__input" required>
-      </div>
-    </div>
-    <div class="register__wrapper--inputs">
-      <div class="register__wrapper--input">
-        <label for="location" class="register__label">Location<span class="label__star--red"> *</span></label>
-        <input name="location" type="text" id="location" class="register__input" required>
-      </div>
-      <div class="register__wrapper--input">
-        <label for="number" class="register__label">Age<span class="label__star--red"> *</span></label>
-        <input name="age" type="number" id="number" class="register__input" required>
-      </div>
-    </div>
-    <div class="register__wrapper--checkbox">
-      <input type="checkbox" id="checkbox" class="register__checkbox">
-      <label for="checkbox" class="register__label label__disabled">Clicking on the button, you consent to the processing of your personal data.</label>
-    </div>
-    <button type="submit" class="register__btn" disabled="disabled">Sign up</button>
-  </div>
-  <div class="register__close" data-close="register"></div>
-</form>
-
-    <form name="send" id="send" class="send modal-js">
-  <div class="send__overlay"></div>
-  <div class="send__wrapper">
-    <div class="send__wrapper--inputs">
-      <div class="send__wrapper--input">
-        <label for="nameSend" class="send__label">What is your name?<span class="label__star--red"> *</span></label>
-        <input type="text" id="nameSend" class="send__input">
-      </div>
-      <div class="send__wrapper--input">
-        <label for="message" class="send__label">Message subject<span class="label__star--red"> *</span></label>
-        <input type="text" id="message" class="send__input">
-      </div>
-    </div>
-    <div class="send__wrapper--inputs">
-      <div class="send__wrapper--input">
-        <label for="emailSend" class="send__label">Your Email<span class="label__star--red"> *</span></label>
-        <input type="email" id="emailSend" class="send__input">
-      </div>
-      <div class="send__wrapper--input">
-        <label for="phone" class="send__label">Your mobile phone<span class="label__star--red"> *</span></label>
-        <input type="number" id="phone" class="send__input">
-      </div>
-    </div>
-    <div class="send__wrapper--area">
-      <label for="textarea" class="send__label">What do you want to discuss with me?</label>
-      <textarea id="textarea" class="send__textarea"></textarea>
-    </div>
-    <div class="send__wrapper--checkbox">
-      <input type="checkbox" id="checkboxSend" class="send__checkbox">
-      <label for="checkboxSend" class="send__label">Clicking on the button, you consent to the processing of your personal data.</label>
-    </div>
-    <button type="submit" class="send__btn">Send</button>
-  </div>
-  <div class="send__close" data-close="send"></div>
-</form>
-
-    <button class="buttonToTop buttonToTop__scroll--hidden"></button>
+    <script src="js/app.js" defer="defer"></script>
+    <script src="js/script.js"></script>
     <script src="js/form.js"></script>
-    <script src="js/form_button.js"></script>
-    <script src="js/burger.js"></script>
-    <script src="js/slider.js"></script>
-    <script src="js/buttonToTop.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="js/swiper.js"></script>
-    <script src="js/register.js"></script>
-    <script src="js/send.js"></script>
-    <script src="js/signIn.js"></script>
+    <script src="js/dynamic.js"></script>
   </body>
 </html>
